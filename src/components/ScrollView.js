@@ -45,10 +45,10 @@ const FlatlistActor = () => {
       style={styles.flat}>
       {data.map(function (item) {
         return (
-          <View style={styles.container}>
-            <View style={styles.Flat} key={item.id}>
+          <View style={styles.container} key={item.id}>
+            <View style={styles.Flat}>
               <Image source={item.img} style={styles.img} />
-              <Text style={styles.txt}>{item.text} </Text>
+              <Text style={styles.txt}>{item.text}</Text>
             </View>
           </View>
         );
